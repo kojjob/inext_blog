@@ -9,9 +9,7 @@ export default function About() {
       </Head>
 
       <main>
-        <h1>
-          About Me
-        </h1>
+        <h1 className='text-2xl text-center my-4'>About Me</h1>
       </main>
     </div>
   )

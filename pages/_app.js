@@ -1,12 +1,13 @@
-import Link from 'next/link'
-import '../styles/globals.css'
+import Link from "next/link"
+
+import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <nav>
-        <ul>
-          <li>
+    <div>
+      <nav className='bg-purple-900'>
+        <ul className='flex p-4 justify-center space-x-4 .'>
+          <li className=''>
             <Link href='/'>
               <a>Home</a>
             </Link>
@@ -23,9 +24,11 @@ function MyApp({ Component, pageProps }) {
           </li>
         </ul>
       </nav>
-      <Component {...pageProps} />
-    </>
-  ) 
+      <div>
+        <Component {...pageProps} />
+      </div>
+    </div>
+  )
 }
 
 export default MyApp
