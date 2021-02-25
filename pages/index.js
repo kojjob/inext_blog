@@ -7,7 +7,7 @@ import styles from "../styles/Home.module.css"
 
 export default function Home() {
   return (
-    <div className='bg-white w-full max-h-full -mb-20'>
+    <div className=''>
       <Head>
         <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
@@ -16,12 +16,12 @@ export default function Home() {
       <main className='p-5'>
         <h1>Kojo's Blog Corner</h1>
       </main>
-      <div className='2xl:container m-auto grid grid-cols-3 md:grid-cols-3 gap-5'>
+      <div className=''>
         {blogPosts.map((item) => (
           <div key={item.slug}>
-            <div className='max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl'>
-              <div class='contents'>
-                <div class='p'>
+            <div className=''>
+              <div classNmae='contents'>
+                <div className='p'>
                   <Link href={`/blog/${item.slug}`}>
                     <a>
                       <img
@@ -33,17 +33,17 @@ export default function Home() {
                     </a>
                   </Link>
                   <div class='p-8'>
-                    <h1 className='text-2xl text-purple-800 text-center py-4 uppercase font-thin'>
+                    <h1 className=''>
                       <Link href={`/blog/${item.slug}`}>
-                        <a class='block mt-1 text-lg font-medium text-gray-600'>
+                        <a class=''>
                           {item.title}
                         </a>
                       </Link>
                     </h1>
-                    <div className='py-0 m-0 text-center font-bold text-xs text-gray-400'>
+                    <div className=''>
                       {item.date.toString()}
                     </div>
-                    <p class=' truncate mt-2 text-gray-500'>{item.content}</p>
+                    <p className=''>{item.content}</p>
                   </div>
                 </div>
               </div>

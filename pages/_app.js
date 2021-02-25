@@ -1,12 +1,11 @@
 import Link from "next/link"
-
 import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <nav className='bg-purple-900'>
-        <ul className='flex p-4 justify-center space-x-4 .'>
+      <nav className='navbar'>
+        <ul className=''>
           <li className=''>
             <Link href='/'>
               <a>Home</a>
